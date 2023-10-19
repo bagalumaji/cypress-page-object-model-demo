@@ -1,9 +1,9 @@
-import { LoginPage } from "../../pages/LoginPage";
 import LoginTestData from "../../fixtures/LoginTestData.json";
-const loginPage = new LoginPage();
+import LoginPage from "../../pages/LoginPage";
 
 describe("Page object Model Demo Suite", function () {
   it("Login to application test", function () {
+    const loginPage = new LoginPage();
     loginPage
       .openUrl()
       .performLoginToApplication(
